@@ -8,17 +8,27 @@ var1 = input('Enter first number: ')
 var2 = input('Enter second number: ')
 
 #Addition
-sum = int(var1) + int(var2)
-print('The sum is:',sum)
+def add(v1,v2):
+
+	res = int(v1) + int(v2)
+	print('The sum is:',res)
 
 #Subtraction
-sub = int(var1) - int(var2)
-print('The subtraction is:', sub)
+def subtract(v1,v2):
+
+	res = int(v1) - int(v2)
+	print('The subtraction is:', res)
 
 #Multiplication
-multiply = int(var1) * int(var2)
-print('The multiplication is:', multiply)
+def multiply(v1,v2):
+
+	res = int(v1) * int(v2)
+	print('The multiplication is:', res)
 
 #Division
-division = int(var1) / int(var2)
-print('The division is:', division)
+def divide(v1,v2):
+
+	res = int(v1) / int(v2)
+	print('The division is:', res)
+
+add(var1,var2)
