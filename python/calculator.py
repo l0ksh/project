@@ -30,6 +30,7 @@ def divide(v1,v2):
 n1 = int(input('Enter first number: '))
 n2 = int(input('Enter second number: '))
 
+#Added menu
 print('''Choose the operation to perform: 
 1. Add
 2. Subtract
