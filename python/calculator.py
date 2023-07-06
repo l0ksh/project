@@ -2,33 +2,55 @@
 
 #This is a basic calculator
 
-
-#Taking inputs from user
-var1 = input('Enter first number: ')
-var2 = input('Enter second number: ')
-
 #Addition
 def add(v1,v2):
 
-	res = int(v1) + int(v2)
-	print('The sum is:',res)
+	res = v1 + v2
+	print('Result:',res)
 
 #Subtraction
 def subtract(v1,v2):
 
-	res = int(v1) - int(v2)
-	print('The subtraction is:', res)
+	res = v1 - v2
+	print('Result:', res)
 
 #Multiplication
 def multiply(v1,v2):
 
-	res = int(v1) * int(v2)
-	print('The multiplication is:', res)
+	res = v1 * v2
+	print('Result:', res)
 
 #Division
 def divide(v1,v2):
 
-	res = int(v1) / int(v2)
-	print('The division is:', res)
+	res = v1 / v2
+	print('Result:', res)
 
-add(var1,var2)
+#Taking inputs from user
+n1 = int(input('Enter first number: '))
+n2 = int(input('Enter second number: '))
+
+print('''Choose the operation to perform: 
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+5. Exit
+''')
+
+option = int(input('Enter option: '))
+
+match option:
+	case 1:
+		add(n1,n2)
+	case 2:
+		subtract(n1,n2)
+	case 3:
+		multiply(n1,n2)
+	case 4:
+		divide(n1,n2)
+	case 5:
+		print('Exiting...')
+	case _:
+		print("Please chooose correct option")
+
